@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Rahim - Portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Muhammad Rahim - Computer Science Student & Software Developer specializing in web development, AI, and cybersecurity">
+    <meta name="keywords" content="software developer, web developer, computer science, python, django, portfolio">
+    <meta name="author" content="Muhammad Rahim">
+    <meta property="og:title" content="Muhammad Rahim - Portfolio">
+    <meta property="og:description" content="Computer Science Student & Software Developer">
+    <meta property="og:image" content="./images/profile.webp">
+    <meta property="og:url" content="https://muhammadrahim.com">
+    
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./portfolio.css" />
+
+  </head>
+  <body>
+    <!-- Back to top button -->
+    <div class="back-to-top" id="backToTop" onclick="scrollToTop()"></div>
+      <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top ">
+      <div class="container-fluid px-4">
+        <a class="navbar-brand fw-bold" href="#about">MR</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <a href="./resume.pdf" class="btn btn-outline-primary me-3" download></a>
+            <i class="fas fa-download me-2"></i>Download Resume
+          </a>
+          <button
+            class="theme-toggle ms-2 visible-toggle"
+            onclick="toggleTheme()"
+          >
+            <i class="fas fa-moon"></i> Toggle Theme
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- Profile Header -->
+      <div class="profile-header" id="about" data-aos="fade-up">
+        <div class="row">
+          <div class=" col-md-4 col-sm-12 text-center mb-3 mb-md-0 ">
+            <img
+              src="./images/profile.webp"
+              alt="Muhammad Rahim" 
+              class="img-fluid"
+              style="max-width: 250px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-md-8">
+            <h1 class="display-4 fw-bold">Muhammad Rahim</h1>
+            <h2 class="h4 text-muted mb-3">
+              Computer Science Student & Software Developer
+            </h2>
+            <p class="lead">
+              I'm a Computer Science undergraduate at FAST NUCES Lahore with a
+              CGPA of 3.33. I specialize in software development, web design,
+              and problem-solving with a keen interest in AI and cybersecurity.
+            </p>
+
+            <div class="contact-info mt-4">
+              <p><i class="fas fa-map-marker-alt"></i> Lahore, Pakistan</p>
+              <p><i class="fas fa-phone"></i> 0315-4200017</p>
+              <p>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:muhammadrahimusman@gmail.com"
+                  >muhammadrahimusman@gmail.com</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Me Section (expanded) -->
+      <div class="section" id="about-me" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="section-title">
+          <i class="fas fa-user me-2"></i>About Me
+        </h3>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>
+              I'm a passionate Computer Science student with a deep interest in creating intuitive and efficient software solutions. My journey in programming started when I was 15, tinkering with HTML and CSS to build simple websites. This early fascination evolved into a serious academic pursuit at FAST NUCES, where I've been honing my skills in various programming languages and software development methodologies.
+            </p>
+            <p>
+              Beyond academics, I'm an active participant in hackathons and coding competitions, where I enjoy the challenge of solving complex problems under pressure. These experiences have taught me the value of teamwork, efficient communication, and quick adaptability - skills that I bring to every project I work on.
+            </p>
+            <p>
+              When I'm not coding, you'll find me exploring the latest tech trends, contributing to open-source projects, or mentoring junior programmers. I believe in continuous learning and strive to expand my knowledge horizon with each passing day.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills Section (with skill bars) -->
+      <div class="section" id="skills" data-aos="fade-up">
+        <h3 class="section-title">
+          <i class="fas fa-code me-2"></i>Technical Skills
+        </h3>
+        <div class="row">
+          <div class="col-md-6">
+            <h4 class="h5 mb-3">Programming Languages</h4>
+            
+            <div class="skill-bar">
+              <div class="skill-name">Python</div>
+              <div class="skill-progress">
+                <div class="skill-percent" style="width: 90%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-bar">
+              <div class="skill-name">C++</div>
+              <div class="skill-progress">
+                <div class="skill-percent" style="width: 85%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-bar">
+              <div class="skill-name">SQL</div>
+              <div class="skill-progress">
+                <div class="skill-percent" style="width: 80%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-bar">
+              <div class="skill-name">JavaScript</div>
+              <div class="skill-progress">
+                <div class="skill-percent" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6">
+            <h4 class="h5 mb-3">Frameworks & Tools</h4>
+            
+            <div class="skill-bar">
+              <div class="skill-name">Django</div>
+              <div class="skill-progress">
+                <div class="skill-percent" style="width: 85%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-bar">
+              <div class="skill-name">Bootstrap</div>
+              <div class="skill-progress">
+                <div class="skill-percent" style="width: 90%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-bar">
+              <div class="skill-name">Git/GitHub</div>
+              <div class="skill-progress">
+                <div class="skill-percent" style="width: 80%"></div>
+              </div>
+            </div>
+            
+            <div class="skill-bar">
+              <div class="skill-name">Adobe Photoshop</div>
+              <div class="skill-progress">
+                <div class="skill-percent" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Section with filter -->
+      <div class="section" id="projects" data-aos="fade-up">
+        <h3 class="section-title">
+          <i class="fas fa-project-diagram me-2"></i>Projects
+        </h3>
+        
+        <!-- Project Filters -->
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="cpp">C++</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="assembly">Assembly</button>
+          <button class="filter-btn" data-filter="python">Python</button>
+        </div>
+        
+        <div class="projects-scroll">
+          <!-- Social-Network-Application -->
+          <div class="project-card" data-category="cpp" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-thumbnail mb-3">
+              <img src="./images/projects/social-network.webp" class="img-fluid rounded" alt="Social Network App" loading="lazy">
+            </div>
+            <h4 class="h5">Social Network Application</h4>
+            <p class="text-muted">C++ Console App</p>
+            <p>
+              Console-based social network simulation: post updates, like,
+              comment, and explore content in a CLI environment.
+            </p>
+            <a
+              href="https://github.com/Rebelhere/Social-Network-Application"
+              target="_blank"
+              class="btn btn-outline-primary"
+            >
+              <i class="fab fa-github me-2"></i>View on GitHub
+            </a>
+          </div>
+          
+          <!-- LexiCraft -->
+          <div class="project-card" data-category="cpp" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-thumbnail mb-3">
+              <img src="./images/projects/lexicraft.webp" class="img-fluid rounded" alt="LexiCraft" loading="lazy">
+            </div>
+            <h4 class="h5">LexiCraft</h4>
+            <p class="text-muted">C++ Text Editor</p>
+            <p>
+              Console-based text editor with real-time editing, efficient
+              navigation, and custom data structures.
+            </p>
+            <a
+              href="https://github.com/Rebelhere/LexiCraft"
+              target="_blank"
+              class="btn btn-outline-primary"
+            >
+              <i class="fab fa-github me-2"></i>View on GitHub
+            </a>
+          </div>
+          
+          <!-- Josephus-Problem -->
+          <div class="project-card" data-category="cpp" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-thumbnail mb-3">
+              <img src="./images/projects/josephus.webp" class="img-fluid rounded" alt="Josephus Problem" loading="lazy">
+            </div>
+            <h4 class="h5">Josephus Problem Visualizer</h4>
+            <p class="text-muted">C++/SFML</p>
+            <p>
+              Graphical simulation of the Josephus problem using C++ and SFML,
+              with sound effects and interactive visualization.
+            </p>
+            <a
+              href="https://github.com/Rebelhere/Josephus-Problem"
+              target="_blank"
+              class="btn btn-outline-primary"
+            >
+              <i class="fab fa-github me-2"></i>View on GitHub
+            </a>
+          </div>
+          
+          <!-- Alphabet-catcher -->
+          <div class="project-card" data-category="assembly" data-aos="fade-up" data-aos-delay="400">
+            <div class="project-thumbnail mb-3">
+              <img src="./images/projects/alphabet-catcher.webp" class="img-fluid rounded" alt="Alphabet Catcher" loading="lazy">
+            </div>
+            <h4 class="h5">Alphabet Catcher</h4>
+            <p class="text-muted">Assembly Game</p>
+            <p>
+              Intel 8088 game: catch falling alphabets, track score, and enjoy
+              scrolling credits at the end.
+            </p>
+            <a
+              href="https://github.com/Rebelhere/Alphabet-catcher"
+              target="_blank"
+              class="btn btn-outline-primary"
+            >
+              <i class="fab fa-github me-2"></i>View on GitHub
+            </a>
+          </div>
+          
+          <!-- rebeltextsite -->
+          <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="500">
+            <div class="project-thumbnail mb-3">
+              <img src="./images/projects/rebeltext.webp" class="img-fluid rounded" alt="RebelTextSite" loading="lazy">
+            </div>
+            <h4 class="h5">RebelTextSite</h4>
+            <p class="text-muted">Django Web App</p>
+            <p>
+              Multi-page text-processing website: clean, format, and analyze
+              text with a Django-powered backend.
+            </p>
+            <a
+              href="https://github.com/Rebelhere/rebeltextsite"
+              target="_blank"
+              class="btn btn-outline-primary"
+            >
+              <i class="fab fa-github me-2"></i>View on GitHub
+            </a>
+          </div>
+          <!-- reactionbot -->
+          <div class="project-card" data-category="python" data-aos="fade-up" data-aos-delay="400">
+            <div class="project-thumbnail mb-3">
+              <img src="./images/projects/reactionbot.webp" class="img-fluid rounded" alt="Numreact" loading="lazy">
+            </div>
+            <h4 class="h5">Numreact</h4>
+            <p class="text-muted">Python Bot</p>
+            <p>
+              A lightweight Discord bot built with Python that automatically reacts to digit-only messages with a customizable emoji. Simple, fun, and fully customizable for your server.
+            </p>
+            <a
+              href="https://github.com/aatiqqq/Numreact"
+              target="_blank"
+              class="btn btn-outline-primary"
+            >
+              <i class="fab fa-github me-2"></i>View on GitHub
+            </a>
+          </div>
+          <!-- Tafakkur -->
+          <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="400">
+            <div class="project-thumbnail mb-3">
+              <img src="./images/projects/Tafakkur.webp" class="img-fluid rounded" alt="Tafakkur" loading="lazy">
+            </div>
+            <h4 class="h5">Tafakkur</h4>
+            <p class="text-muted">Islamic knowledge website</p>
+            <p>
+              Tafakkur is an Islamic knowledge website that provides the complete Qur’an and 7 major Hadith books in one place, with powerful search and chapter-wise browsing — designed to encourage deep reflection and easy learning.
+            </p>
+            <a
+              href="https://github.com/StormFs/Tafakkur"
+              target="_blank"
+              class="btn btn-outline-primary"
+            >
+              <i class="fab fa-github me-2"></i>View on GitHub
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- Education Section with Timeline -->
+      <div class="section" id="education" data-aos="fade-up">
+        <h3 class="section-title">
+          <i class="fas fa-graduation-cap me-2"></i>Education
+        </h3>
+        
+        <div class="timeline">
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-content">
+              <h4 class="h5">Bachelor of Science in Computer Science</h4>
+              <p class="text-muted">FAST NUCES, Lahore</p>
+              <p>2021 - Present</p>
+              <p>CGPA: 3.33</p>
+              <p>Relevant Coursework: Data Structures, Algorithms, Database Systems, Web Programming</p>
+            </div>
+          </div>
+          
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-content">
+              <h4 class="h5">FSc Pre-Engineering</h4>
+              <p class="text-muted">Punjab Group of Colleges</p>
+              <p>2019 - 2021</p>
+              <p>Studied Mathematics, Physics, and Computer Science</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form Section -->
+      <div class="section" id="contact" data-aos="fade-up">
+        <h3 class="section-title">
+          <i class="fas fa-envelope me-2"></i>Get In Touch
+        </h3>
+        
+        <div class="row">
+          <div class="col-md-6">
+            <form class="contact-form">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+              </div>
+              
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" placeholder="Subject">
+              </div>
+              
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+          
+          <div class="col-md-6">
+            <div class="contact-info p-4 h-100">
+              <h4 class="mb-4">Contact Information</h4>
+              
+              <p><i class="fas fa-map-marker-alt me-2"></i> Lahore, Pakistan</p>
+              <p><i class="fas fa-phone me-2"></i> 0315-4200017</p>
+              <p>
+                <i class="fas fa-envelope me-2"></i>
+                <a href="mailto:muhammadrahimusman@gmail.com">muhammadrahimusman@gmail.com</a>
+              </p>
+              
+              <div class="social-links mt-4">
+                <a href="https://www.linkedin.com/in/muhammadrahimusman" target="_blank" class="me-3" title="LinkedIn">
+                  <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://github.com/Rebelhere" target="_blank" class="me-3" title="GitHub">
+                  <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="https://instagram.com/rahim.usman.77" target="_blank" class="me-3" title="Instagram">
+                  <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="https://facebook.com/rahim.usman" target="_blank" class="me-3" title="Facebook">
+                  <i class="fab fa-facebook fa-2x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-5 pt-4 pb-3" style="background: var(--card-bg); border-top: 1px solid #e0e0e0">
+      <div class="container text-center">
+        <div class="text-muted small">
+          &copy; 2024 Muhammad Rahim. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      // Initialize AOS
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true
+      });
+      
+      // Theme Toggle
+      function toggleTheme() {
+        const html = document.documentElement;
+        const currentTheme = html.getAttribute("data-bs-theme");
+        const newTheme = currentTheme === "light" ? "dark" : "light";
+        html.setAttribute("data-bs-theme", newTheme);
+
+        // Update theme toggle icon
+        const themeIcon = document.querySelector(".theme-toggle i");
+        themeIcon.className = newTheme === "light" ? "fas fa-moon" : "fas fa-sun";
+      }
+      
+      // Back to top functionality
+      window.addEventListener('scroll', function() {
+        const backToTopButton = document.getElementById('backToTop');
+        if (window.scrollY > 300) {
+          backToTopButton.classList.add('visible');
+        } else {
+          backToTopButton.classList.remove('visible');
+        }
+      });
+      
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }
+      
+      // Project filtering
+      document.addEventListener('DOMContentLoaded', function() {
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+        
+        filterButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            const filter = this.getAttribute('data-filter');
+            
+            projectCards.forEach(card => {
+              if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                card.style.display = 'block';
+              } else {
+                card.style.display = 'none';
+              }
+            });
+          });
+        });
+        
+        // Navbar active link on scroll
+        const sections = [
+          "about",
+          "skills",
+          "projects",
+          "education",
+          "contact"
+        ];
+        const navLinks = document.querySelectorAll(".nav-link");
+        
+        function onScroll() {
+          let scrollPos = window.scrollY || window.pageYOffset;
+          let offset = 120;
+          
+          for (let i = 0; i < sections.length; i++) {
+            let section = document.getElementById(sections[i]);
+            if (section) {
+              let top = section.offsetTop - offset;
+              let bottom = top + section.offsetHeight;
+              
+              if (scrollPos >= top && scrollPos < bottom) {
+                navLinks.forEach((link) => link.classList.remove("active"));
+                navLinks[i].classList.add("active");
+              }
+            }
+          }
+        }
+        
+        window.addEventListener("scroll", onScroll);
+        
+        // Form submission (placeholder)
+        const contactForm = document.querySelector('.contact-form');
+        if (contactForm) {
+          contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! This is a demo form - in a real implementation, this would send an email.');
+            this.reset();
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
