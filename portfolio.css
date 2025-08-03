@@ -84,6 +84,7 @@
       .back-to-top.visible {
         opacity: 1;
       }
+      
       body {
         font-family: "Poppins", sans-serif;
         background-color: var(--bg-color);
